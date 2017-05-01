@@ -6,9 +6,57 @@ body{
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
 }
-.light-font{
+
+/*=================================    FONTS AND COLORS */
+
+.neuton{
+	font-family: "Neuton";
+}
+.xlight{
+	font-weight: 200;
+}
+.light{
 	font-weight: 300;
 }
+.orange-text{
+	color: #fba62f;
+}
+.orange{
+	background-color: #FCA62F;
+}
+.red{
+	background-color: #da5a35;
+}
+.aqua{
+	background-color: #76aa9b;
+}
+.blue{
+	background-color: #597293;
+}
+.blue-text{
+	color: #597293;
+}
+.navy{
+	background-color: #3B5578;
+}
+.dark-grey{
+	color: #4b515f;
+}
+.dark-grey-text{
+	color: #4C4D4F;
+}
+.light-grey{
+	background-color: #fbfbfb;
+}
+.light-grey-text{
+	color: #fbfbfb;
+}
+.med-grey-text{
+	color: #939598;
+}
+
+/*=================================    HEADER */
+
 .header{}
 .header-top{
 	display: flex;
@@ -16,8 +64,8 @@ body{
 .logo{
 	text-transform: uppercase;
 	width: 35%;
-	font-size: 33px;
-	padding: 30px 0 30px 60px;
+	font-size: 24px;
+	padding: 30px 0 30px 35px;
 }
 .nav{
 	width: 60%;
@@ -27,8 +75,9 @@ body{
 .nav-list{
 	display: flex;
 	justify-content: space-around;
-	padding-top: 25px;
+	padding-top: 30px;
 	padding-left: 0;
+	font-size: 10px;
 }
 .nav-item{
 	padding-left: 15px;
@@ -45,37 +94,13 @@ body{
 	height: 8px;
 	width: calc(100% / 9);
 }
-.orange-text{
-	color: #fba62f;
-}
-.orange{
-	background-color: #fba62f;
-}
-.red{
-	background-color: #da5a35;
-}
-.aqua{
-	background-color: #76aa9b;
-}
-.blue{
-	background-color: #597293;
-}
-.navy{
-	background-color: #49515d;
-}
-.dark-grey{
-	color: #4b515f;
-}
-.light-grey{
-	background-color: #fbfbfb;
-}
-.light-grey-text{
-	color: #fbfbfb;
-}
+
+/*=================================    HERO */
+
 .hero{
 	background-image: url("images/city.jpg");
 	background-size: 200%;
-	height: 430px;
+	height: 330px;
 	text-align: center;
 }
 .overlay{
@@ -94,26 +119,22 @@ body{
 	position: absolute;
 }
 .hero-text{
+	font-size: 28px;
 }
 .bar{
 	width: 150px;
 }
 .hero-subtext{
+	font-size: 16px;
 }
+/*=================================    SUB-HERO */
+
 .sub-hero-container{
 	display: flex;
 	justify-content: center;
 }
 .sub-hero{
-	height: 450px;
-	width: 50%;
-}
-.sub-hero-text-container{
-	padding: 30px;
-	padding-top: 70px;
-	text-align: center;
-	position: absolute;
-	z-index: 2;
+	height: 360px;
 	width: 50%;
 }
 .sub-hero-left{
@@ -128,12 +149,21 @@ body{
 	background-size: 140%;
 }
 .sub-hero-overlay{
-	height: 450px;
-	opacity: 0.7;
+	height: 360px;
+	opacity: 0.9;
+	width: 50%;
+}
+
+.sub-hero-text-container{
+	padding: 30px;
+	padding-top: 70px;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
 	width: 50%;
 }
 .sub-hero-title{
-	font-size: 35px;
+	font-size: 25px;
 }
 .sub-hero-text{
 	margin-top: 50px;
@@ -145,16 +175,57 @@ body{
 	width: 140px;
 	margin: auto;
 }
-.btn-red{
-	
+/*=================================    ARTICLES */
+.article-container{
+	display: flex;
+	justify-content: space-around;
+	margin: 0 30px;
 }
-.btn-white{}
-.btn-article{}
-.article-container{}
+.articles-header{
+	display: flex;
+	justify-content: flex-start;
+}
+.articles-header h4{
+	margin-left: 33px;
+}
+.view-all-link{
+	margin-left: 62%;
+	padding-top: 30px;
+	font-size: 12px;
+	text-decoration: none;
+}
 .article{
-	border: 1px solid grey;
+	margin: 0 10px;
+	border: 1px solid lightgrey;
 }
-.article-figure{}
+.article-figure{
+	margin: 10px 15px;
+}
+.article-pics{
+	background-size: cover;
+	width: 230px;
+	height: 140px;
+	margin: 10px auto;
+}
+.article-pic1{
+	background-image: url("images/new-york.jpg");
+}
+.article-pic2{
+	background-image: url("images/cliff.jpg");
+}
+.article-pic3{
+	background-image: url("images/street.jpg");
+}
+.article-preview{
+	margin: 12px;
+	margin-left: 14px;
+}
+.article-btns{
+	width: 100%;
+	text-align: center;
+}
+/*=================================    FOOTER */
+
 .footer{}
 .footer-links{}
 .connection-info{}
