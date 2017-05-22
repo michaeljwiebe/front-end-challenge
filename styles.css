@@ -195,6 +195,7 @@ body{
 	text-decoration: none;
 }
 .article-container{
+	margin: 10px;
 }
 .article{
 	margin: 0;
