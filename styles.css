@@ -249,12 +249,15 @@ form{
 	margin-left: 23px;
 	width: 57%;
 }
-.form-message input{
+.form-message textarea{
 	height: 239px;
+	font-size: 28px;
+	width: 445px;
 }
 .form-inputs div label{
 	display: block;
 	margin: 20px 0;
+	text-transform: uppercase;
 }
 .form-inputs div input{
 	width: 100%;
@@ -267,14 +270,29 @@ form{
 	width: 250px;
 }
 
-
-
-
-
-}
-
 /*=================================    FOOTER */
 
-.footer{}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer-top{
+	margin: 0;
+	height: 100px;
+}
+
+.footer-nav{
+	width: 53%;
+	margin-right: 4%;
+}
 .footer-links{}
-.connection-info{}
+
+.footer-contact{
+	color: #597293;
+	border-top: 1px solid #597293;
+	margin-top: -16px;
+}
+.contact-info{
+
+}
