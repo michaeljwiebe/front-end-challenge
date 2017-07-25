@@ -4,7 +4,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Neuton:200,300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://use.fontawesome.com/7a0beaf8bc.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 </head>
@@ -127,7 +128,11 @@
 					<label>Email*</label>
 					<input type="email" name="email">
 					<label>I'm interested in...</label>
-					<input type="" name="dropdown-menu">
+					<select class="form-interest" name="dropdown-menu">
+						<option value="lorem">Lorem Ipsum Dolor Sit</option>
+						<option value="egestas">Egestas Eget Vitae Purus</option>
+						<option value="cras">Cras Ultrices Nec</option>
+					</select>
 				</div>
 				<div class="form-message">
 					<label>Message</label>
@@ -138,7 +143,7 @@
 			</div>
 		</form>
 		<footer>
-			<div class="footer-top footer navy">
+			<div class="footer-top footer light-grey-text navy">
 				<div class="logo">Lorem Ipsum <span class="orange-text">|</span> LLC</div>
 				<div class="footer-nav">
 					<ul class="nav-list footer-links">
@@ -153,7 +158,16 @@
 			<div class="footer footer-contact navy">
 				<p class="copyright">Copyright Lorem Ipsum, LLC.</p>
 				<div class="contact-info">
-
+					<ul class="contact-list">
+						<li>123 Made Up Ln. City, State 90210</li>
+						<li>123 123 1234</li>
+						<li>info@loremipsum.com</li>
+						<li class="social-media">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>

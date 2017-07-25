@@ -1,0 +1,42 @@
+.footer{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 9px;
+}
+.footer-top{
+	margin: 0;
+	height: 100px;
+}
+
+.footer-nav{
+	width: 53%;
+	margin-right: 4%;
+}
+.footer-links{}
+
+.footer-contact{
+	color: #597293;
+	border-top: 1px solid #597293;
+	margin-top: -16px;
+}
+.copyright{
+	margin: 14px 0 10px 35px;
+
+}
+.contact-info{
+
+}
+
+.contact-list{
+	list-style: none;
+	margin-right: 15px;
+}
+
+.contact-list li{
+	display: inline-block;
+	margin: 0 15px;
+}
+.social-media{
+	font-size: 18px;
+}
