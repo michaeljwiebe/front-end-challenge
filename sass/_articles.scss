@@ -2,7 +2,7 @@
 .articles-container{
 	display: flex;
 	justify-content: space-around;
-	margin: 0 30px;
+	flex-wrap: wrap;
 }
 .articles-header{
 	display: flex;
@@ -18,21 +18,24 @@
 	text-decoration: none;
 }
 .article-container{
-	margin: 10px;
+	margin-bottom: 10px;
+	width: 30%;
 }
 .article{
 	margin: 0;
-	height: 360px;
+	// height: 360px;
 	border: 1px solid lightgrey;
 }
 .article-figure{
-	margin: 10px 15px;
+	margin: 10px;
 }
 .article-pics{
-	background-size: cover;
-	width: 230px;
-	height: 140px;
-	margin: 10px auto;
+	min-width: 215px;
+    width: 24vw;
+    height: 16vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
 }
 .article-pic1{
 	background-image: url("../images/new-york.jpg");
@@ -48,8 +51,8 @@
 }
 .article-preview{
 	margin: 12px;
-	margin-left: 14px;
-	height: 80px;
+	margin: 10px;
+	min-height: 100px;
 }
 .article-btns{
 	width: 100%;
@@ -70,7 +73,7 @@ form{
 }
 .form-message{
 	margin-left: 23px;
-	width: 44vw;
+	max-width: 44vw;
 }
 .form-message textarea{
 	height: 239px;
@@ -96,4 +99,15 @@ form{
 	margin-top: 16px;
 	text-align: center;
 	width: 250px;
+}
+
+@media all and (min-width: 500px) and (max-width: 800px){
+	.form-message{
+		width: 40vw;
+	}
+	.form-message textarea{
+		height: 239px;
+		// width: 90%;
+		font-size: 28px;
+	}
 }
