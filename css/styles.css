@@ -105,7 +105,12 @@
   font-size: 25px; }
 
 .sub-hero-text {
-  margin-top: 50px; }
+  margin-top: 50px;
+  min-width: 260px;
+  min-height: 70px; }
+
+.sub-hero, .sub-hero-text-container, .sub-hero-overlay {
+  min-width: 310px; }
 
 .btn {
   font-family: Times;
@@ -114,6 +119,36 @@
   width: 140px;
   margin: auto; }
 
+@media all and (max-width: 886px) {
+  .hero-text-container {
+    padding-top: 5vh; }
+
+  h1 {
+    margin: 5px; }
+
+  .sub-hero-text-container {
+    padding-top: 55px; }
+
+  .sub-hero-text {
+    margin-top: 20px; } }
+@media all and (min-width: 500px) and (max-width: 800px) {
+  .sub-hero-right {
+    background-position-y: -100px;
+    background-position-x: -249px;
+    background-size: 240%; }
+
+  .sub-hero-left {
+    background-position-x: -85px;
+    background-size: 140%; }
+
+  .sub-hero, .sub-hero-overlay, .sub-hero {
+    height: 289px; }
+
+  .sub-hero-text-container {
+    padding: 20px 10px; }
+
+  .sub-hero-text-container h2 {
+    font-size: 20px; } }
 .neuton {
   font-family: "Neuton"; }
 
@@ -190,8 +225,10 @@
 
 .article-pics {
   min-width: 215px;
+  max-width: 300px;
   width: 24vw;
   height: 16vw;
+  max-height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px auto; }
@@ -225,18 +262,18 @@ form {
 .form-inputs {
   padding: 30px 60px 0 60px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap; }
 
 .form-basics {
   width: 40%; }
 
 .form-message {
   margin-left: 23px;
-  max-width: 44vw; }
+  width: 400px; }
 
 .form-message textarea {
   height: 239px;
-  width: 100%;
+  width: 400px;
   font-size: 28px; }
 
 .form-inputs div label {
@@ -260,11 +297,15 @@ form {
   width: 250px; }
 
 @media all and (min-width: 500px) and (max-width: 800px) {
+  .form-inputs {
+    padding: 3.6vw 7vw; }
+
   .form-message {
-    width: 40vw; }
+    width: 250px; }
 
   .form-message textarea {
     height: 239px;
+    width: 250px;
     font-size: 28px; } }
 .footer {
   display: flex;

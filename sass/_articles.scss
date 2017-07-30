@@ -31,8 +31,10 @@
 }
 .article-pics{
 	min-width: 215px;
+	max-width: 300px;
     width: 24vw;
     height: 16vw;
+	max-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px auto;
@@ -66,18 +68,18 @@ form{
 .form-inputs{
 	padding: 30px 60px 0 60px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 .form-basics{
 	width: 40%;
 }
 .form-message{
 	margin-left: 23px;
-	max-width: 44vw;
+	width: 400px;
 }
 .form-message textarea{
 	height: 239px;
-	width: 100%;
+	width: 400px;
 	font-size: 28px;
 }
 .form-inputs div label{
@@ -102,11 +104,15 @@ form{
 }
 
 @media all and (min-width: 500px) and (max-width: 800px){
+	.form-inputs{
+		padding: 3.6vw 7vw;
+	}
 	.form-message{
-		width: 40vw;
+		width: 250px;
 	}
 	.form-message textarea{
 		height: 239px;
+		width: 250px;
 		// width: 90%;
 		font-size: 28px;
 	}

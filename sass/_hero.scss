@@ -73,6 +73,11 @@
 }
 .sub-hero-text{
 	margin-top: 50px;
+	min-width: 260px;
+	min-height: 70px;
+}
+.sub-hero, .sub-hero-text-container, .sub-hero-overlay{
+	min-width: 310px;
 }
 .btn{
 	font-family: Times;
@@ -80,4 +85,45 @@
 	padding: 10px 20px;
 	width: 140px;
 	margin: auto;
+}
+
+@media all and (max-width: 886px){
+	.hero-text-container{
+		padding-top: 5vh;
+	}
+	h1{
+		margin: 5px;
+	}
+	.sub-hero-text-container{
+		padding-top: 55px;
+	}
+	.sub-hero-text{
+		margin-top: 20px;
+	}
+
+}
+
+@media all and (max-width: 730px){
+
+}
+
+@media all and (min-width: 500px) and (max-width: 800px){
+	.sub-hero-right{
+		background-position-y: -100px;
+		background-position-x: -249px;
+		background-size: 240%;
+	}
+	.sub-hero-left{
+		background-position-x: -85px;
+		background-size: 140%;
+	}
+	.sub-hero, .sub-hero-overlay, .sub-hero{
+		height: 289px;
+	}
+	.sub-hero-text-container{
+		padding: 20px 10px;
+	}
+	.sub-hero-text-container h2{
+		font-size: 20px;
+	}
 }
