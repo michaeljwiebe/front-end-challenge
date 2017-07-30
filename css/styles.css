@@ -68,7 +68,8 @@
 /*=================================    SUB-HERO */
 .sub-hero-container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .sub-hero {
   height: 360px;
@@ -131,7 +132,11 @@
 
   .sub-hero-text {
     margin-top: 20px; } }
-@media all and (min-width: 500px) and (max-width: 800px) {
+@media all and (min-width: 320px) and (max-width: 800px) {
+  .hero-text-container {
+    width: 70%;
+    margin: 0 15%; }
+
   .sub-hero-right {
     background-position-y: -100px;
     background-position-x: -249px;
@@ -149,6 +154,38 @@
 
   .sub-hero-text-container h2 {
     font-size: 20px; } }
+@media all and (min-width: 450px) and (max-width: 650px) {
+  .sub-hero, .sub-hero-text-container, .sub-hero-overlay {
+    width: 100%;
+    height: 400px; }
+
+  .sub-hero-left {
+    background-position-x: -142px;
+    background-size: 139%; }
+
+  .sub-hero-right {
+    background-position-y: 0;
+    background-position-x: -95px;
+    background-size: 152%; }
+
+  .sub-hero-text-container h2 {
+    font-size: 25px; } }
+@media all and (min-width: 320px) and (max-width: 450px) {
+  .sub-hero, .sub-hero-text-container, .sub-hero-overlay {
+    width: 100%;
+    height: 300px; }
+
+  .sub-hero-left {
+    background-position-x: -100px;
+    background-size: 139%; }
+
+  .sub-hero-right {
+    background-position-y: 0;
+    background-position-x: -95px;
+    background-size: 152%; }
+
+  .sub-hero-text-container h2 {
+    font-size: 25px; } }
 .neuton {
   font-family: "Neuton"; }
 
