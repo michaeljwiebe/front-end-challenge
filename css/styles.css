@@ -1,9 +1,15 @@
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
 .header-top {
   display: flex; }
 
 .logo {
   text-transform: uppercase;
-  width: 35%;
+  min-width: 249px;
   font-size: 24px;
   padding: 30px 0 30px 35px; }
 
@@ -11,6 +17,9 @@
   width: 60%;
   margin-left: 10%;
   margin-right: 3%; }
+
+.hamburger-btn {
+  display: none; }
 
 .nav-list {
   display: flex;
@@ -33,6 +42,46 @@
   height: 8px;
   width: calc(100% / 9); }
 
+@media all and (max-width: 775px) {
+  .hamburger-btn {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    width: 38px;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 2px;
+    z-index: 3; }
+
+  .white-border {
+    border: 1px solid white; }
+
+  .nav {
+    width: 150px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+    right: -50vw;
+    top: 26px;
+    z-index: 2;
+    transition: all 1s; }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 16px; }
+
+  .nav-item {
+    padding: 11px;
+    width: 100%; }
+
+  .hamburger-nav-show {
+    right: -23px; } }
 .hero {
   background-image: url("../images/city.jpg");
   background-size: 200%;
@@ -344,6 +393,44 @@ form {
     height: 239px;
     width: 250px;
     font-size: 28px; } }
+@media all and (max-width: 800px) {
+  .article-container {
+    width: 100%; }
+
+  .article {
+    font-size: 18px; }
+
+  .article-figure {
+    margin: 0; }
+
+  .article-pics {
+    width: 100vw;
+    height: 63vw;
+    max-width: 800px;
+    max-height: 600px; }
+
+  .article-caption {
+    margin: 10px;
+    min-height: 20px;
+    height: auto; }
+
+  .article-preview {
+    min-height: 50px; }
+
+  form {
+    height: 750px; }
+
+  .form-inputs {
+    display: block; }
+
+  .form-message {
+    margin: 0; }
+
+  .form-inputs {
+    padding: 0; }
+
+  .form-inputs, .form-basics, .form-message, .form-message textarea, .contact-info, .contact-list li {
+    width: 100%; } }
 .footer {
   display: flex;
   justify-content: space-between;
@@ -377,6 +464,9 @@ form {
 .social-media {
   font-size: 18px; }
 
+@media all and (max-width: 775px) {
+  .footer-nav {
+    display: none; } }
 * {
   box-sizing: border-box; }
 

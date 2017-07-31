@@ -40,3 +40,9 @@
 .social-media{
 	font-size: 18px;
 }
+
+@media all and (max-width: 775px){
+	.footer-nav{
+		display: none;
+	}
+}
