@@ -14,7 +14,13 @@
 	margin-right: 4%;
 }
 .footer-links{}
-
+.footer-link{
+	text-decoration: none;
+}
+.footer-link .nav-item{
+	padding: 16px;
+	color: white;
+}
 .footer-contact{
 	color: #597293;
 	border-top: 1px solid #597293;

@@ -27,6 +27,17 @@
 .bar{
 	width: 150px;
 }
+.hero-text-container:hover{
+	.bar{
+		animation: bar-grow 0.4s;
+	}
+}
+
+@keyframes bar-grow{
+	0%{ width: 150px }
+	40%{ width: 250px }
+	100%{ width: 150px }
+}
 .hero-subtext{
 	font-size: 16px;
 }
@@ -41,6 +52,11 @@
 	height: 360px;
 	width: 50%;
 	max-width: 542.5px;
+}
+.sub-hero:hover{
+	.bar{
+		animation: bar-grow 0.4s;
+	}
 }
 .sub-hero-left{
 	background-image: url("../images/bear.jpg");
@@ -86,6 +102,10 @@
 	padding: 10px 20px;
 	width: 140px;
 	margin: auto;
+	transition: 0.3s;
+}
+.btn:hover{
+	box-shadow: 3px 3px black;
 }
 
 @media all and (max-width: 886px){

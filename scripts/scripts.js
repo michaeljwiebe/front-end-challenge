@@ -3,7 +3,6 @@ var nav = document.getElementsByClassName("nav")[0];
 var navList = document.getElementsByClassName("nav-list")[0];
 var navLinks = document.getElementsByClassName("nav-link");
 var hamburgerIcon = document.getElementsByClassName("hamburger-icon")[0];
-var closeIcon = document.getElementsByClassName("close-icon")[0];
 
 hamburgerIcon.addEventListener("click", function() {
 	nav.classList.add("hamburger-nav-show", "navy");
@@ -18,6 +17,7 @@ hamburgerIcon.addEventListener("click", function() {
 	});
 });
 
+var closeIcon = document.getElementsByClassName("close-icon")[0];
 closeIcon.addEventListener("click", function() {
 	nav.classList.remove("hamburger-nav-show", "navy", "light-grey-text");
 	hamburgerIcon.classList.add("show");
